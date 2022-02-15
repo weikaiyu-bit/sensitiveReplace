@@ -91,3 +91,30 @@ public class SensitiveCoreBeanConfig
 |  ----   | ---- |  ----   | ---- | ----   |
 |keyDataType| DataTypeEnum|LIST,ENTITY|LIST| 你需要提供替换字段值的类型 |
 
+
+
+#### 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,使用方式：
+
+```
+Map<String,Object> localVarData=new HashMap<>();
+localVarData.put(ThreadLocalConstant.DATA, "您要返回前端的集合或者单个实体数据");
+SensitiveCoreBean.localVar.set(localVarData);
+
+```
+
+*示例：*
+```
+	// 注:若您put到localVarData的数据为集合则dataType为 DataTypeEnum.LIST，若是实体则为DataTypeEnum.ENTITY
+	@SensitiveReplace(dataType = DataTypeEnum.LIST)
+	@RequestMapping(value = "/query", method = RequestMethod.GET)
+	public Page<Test> query(Test company, String pageNo, String pageSize) {
+		Page<Test> page = super.getPage(pageNo, pageSize);
+		// 您需要构建map对象
+		Map<String,Object> localVarData=new HashMap<>();
+		localVarData.put(ThreadLocalConstant.DATA, page.getResult());
+		SensitiveCoreBean.localVar.set(localVarData);
+		// ResultHelper.makeSuccessResult 为自己项目所定制的统一封装返回体，page为分页数据，page实体里一般封装了json返前端数据( page.getResult()即是脱敏的数据 )
+		return ResultHelper.makeSuccessResult(page);
+
+	}
+```
