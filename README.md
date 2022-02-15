@@ -1,7 +1,7 @@
 # sensitiveReplace
 sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即用，无代码入侵，注解方式配置即可。
 <br/>
-*脱敏效果如下：*
+###### *脱敏效果如下：*
 <br/>
 ![image](https://user-images.githubusercontent.com/57822030/154007275-41a7e401-6265-427e-9e1f-a6c90c493974.png)
 
