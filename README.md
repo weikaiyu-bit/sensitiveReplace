@@ -17,7 +17,7 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
     <version>1.0.2</version>
 </dependency>
 ```
-### 步骤二：注入SensitiveCoreBean bean
+### 步骤二：注入SensitiveCoreBean
 
 ##### 1、若您使用的是springmvc,你将在你的配置文件中注入Bean:
 `<bean class="com.hgsoft.zengzhiyingyong.module.sensitive.aspect.SensitiveCoreBean" lazy-init="false"/>`
