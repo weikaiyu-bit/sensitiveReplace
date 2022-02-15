@@ -108,7 +108,7 @@ SensitiveLocalUtil.setLocalVar(companyInfoPage.getResult());
 	@RequestMapping(value = "/query", method = RequestMethod.GET)
 	public Page<Test> query(Test company, String pageNo, String pageSize) {
 		Page<Test> page = super.getPage(pageNo, pageSize);
-		*SensitiveLocalUtil.setLocalVar(companyInfoPage.getResult());*
+		SensitiveLocalUtil.setLocalVar(companyInfoPage.getResult());
 		// ResultHelper.makeSuccessResult 为自己项目所定制的统一封装返回体，
 		//page为分页数据，page实体里一般封装了json返前端数据( page.getResult()即是脱敏的数据 )
 		return ResultHelper.makeSuccessResult(page);
