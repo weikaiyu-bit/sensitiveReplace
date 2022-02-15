@@ -6,8 +6,8 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
 
 
 
-## 使用方式
-### 步骤一：引入maven依赖
+## 一、使用方式
+### 步骤1：引入maven依赖
   *注：必须选择1.0.2之后版本*
   ---
    ```java<!-- https://mvnrepository.com/artifact/io.github.weikaiyu-bit/sensitive-replace -->
@@ -18,12 +18,12 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
 </dependency>
 ```
   ---
-### 步骤二：注入SensitiveCoreBean
+### 步骤2：注入SensitiveCoreBean
 
-##### 1、若您使用的是springmvc,你将在你的配置文件中注入Bean:
+##### 1)、若您使用的是springmvc,你将在你的配置文件中注入Bean:
 `<bean class="com.hgsoft.zengzhiyingyong.module.sensitive.aspect.SensitiveCoreBean" lazy-init="false"/>`
 
-##### 2、若您使用的是springboot,请在项目中添加SensitiveCoreBean配置
+##### 2)、若您使用的是springboot,请在项目中添加SensitiveCoreBean配置
 ```java
 import com.wky.sensitive.aspect.SensitiveCoreBean;
 
@@ -41,7 +41,7 @@ public class SensitiveCoreBeanConfig
 
   ---
 
-*示例演示：*
+## 二、使用示例
 
 1、你只需要在controller中添加`@SensitiveReplace`注解，并标识你所返回的数据类型，如下所示
  ```java
@@ -64,7 +64,7 @@ public class SensitiveCoreBeanConfig
   即可完成替换
  
   ---
-  ### 注解参数说明
+  ## 三、注解参数说明
   
   ##### 1、@SensitiveReplace,
   ###### 你需要在数据的返回函数上标识该注解
@@ -96,7 +96,7 @@ public class SensitiveCoreBeanConfig
 
   ---
 
-#### 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,
+#### 四、 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,
 
 *使用方式：*
 ```java
