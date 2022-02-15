@@ -97,7 +97,7 @@ public class SensitiveCoreBeanConfig
 
 *使用方式：*
 ```java
-SensitiveLocalUtil.setLocalVar(companyInfoPage.getResult());
+SensitiveLocalUtil.setLocalVar("您需要脱敏的数据");
 
 ```
 
