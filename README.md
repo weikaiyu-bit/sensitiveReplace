@@ -6,7 +6,7 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
 
 ## 使用方式
 ### 步骤一：引入maven依赖
-  *注：必须选择1.0.0之后版本*
+  *注：必须选择1.0.1之后版本*
   ---
    ```java<!-- https://mvnrepository.com/artifact/io.github.weikaiyu-bit/sensitive-replace -->
 <dependency>
