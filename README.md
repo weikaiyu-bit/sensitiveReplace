@@ -95,7 +95,7 @@ public class SensitiveCoreBeanConfig
 
 #### 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,使用方式：
 
-```
+```java
 Map<String,Object> localVarData=new HashMap<>();
 localVarData.put(ThreadLocalConstant.DATA, "您要返回前端的集合或者单个实体数据");
 SensitiveCoreBean.localVar.set(localVarData);
@@ -103,7 +103,7 @@ SensitiveCoreBean.localVar.set(localVarData);
 ```
 
 *示例：*
-```
+```java
 	// 注:若您put到localVarData的数据为集合则dataType为 DataTypeEnum.LIST，若是实体则为DataTypeEnum.ENTITY
 	@SensitiveReplace(dataType = DataTypeEnum.LIST)
 	@RequestMapping(value = "/query", method = RequestMethod.GET)
