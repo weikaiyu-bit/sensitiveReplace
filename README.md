@@ -89,7 +89,7 @@ public class SensitiveCoreBeanConfig
 
 |  参数   | 类型  | 可选值  | 默认值 | 说明  |
 |  ----   | ---- |  ----   | ---- | ----   |
-|keyDataType| DataTypeEnum|LIST,ENTITY|LIST| 嵌套的数据的类型 |
+|keyDataType| DataTypeEnum|LIST,ENTITY|ENTITY| 嵌套的数据的类型 |
 
 
 
