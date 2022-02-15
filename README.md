@@ -17,6 +17,7 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
     <version>1.0.2</version>
 </dependency>
 ```
+  ---
 ### 步骤二：注入SensitiveCoreBean
 
 ##### 1、若您使用的是springmvc,你将在你的配置文件中注入Bean:
@@ -38,6 +39,7 @@ public class SensitiveCoreBeanConfig
 }
 ```
 
+  ---
 
 *示例演示：*
 
@@ -66,6 +68,7 @@ public class SensitiveCoreBeanConfig
   <br />
   <br />
   
+  ---
   ### 注解参数说明
   
   ##### 1、@SensitiveReplace,
@@ -96,7 +99,7 @@ public class SensitiveCoreBeanConfig
 |  ----   | ---- |  ----   | ---- | ----   |
 |keyDataType| DataTypeEnum|LIST,ENTITY|ENTITY| 嵌套的数据的类型 |
 
-
+  ---
 
 #### 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,
 
