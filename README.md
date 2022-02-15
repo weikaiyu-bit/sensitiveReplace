@@ -83,7 +83,7 @@ public class SensitiveCoreBeanConfig
 
 |  参数   | 类型  | 可选值  | 默认值 | 说明  |
 |  ----   | ---- |  ----   | ---- | ----   |
-| rulePath  | Class | BankCardRuleImpl.class<br />IdentityCardRuleImpl.class<br />NameRuleImpl.class<br />VehiclePlateRuleImpl.class  |NameRuleImpl.class| 你需要提供该字段的替换规则，插件将默认提供身份证、名字，银行卡，车牌号四种类型的脱敏规则，若不满足你的脱敏需求，你只需要实现com.wky.sensitive.rule，并告诉rulePath你实现的脱敏规则类Class即可 |
+| rulePath  | Class | BankCardRuleImpl.class<br />IdentityCardRuleImpl.class<br />NameRuleImpl.class<br />VehiclePlateRuleImpl.class  |NameRuleImpl.class| 你需要提供该字段的替换规则，插件将默认提供身份证、名字，银行卡，车牌号四种类型的脱敏规则，若不满足你的脱敏需求，你只需要实现com.wky.sensitive.rule.Rule接口，并告诉rulePath你实现的脱敏规则类Class即可 |
 | description  | String | -- |-- | 对注解的描述（可选） |
 
 
