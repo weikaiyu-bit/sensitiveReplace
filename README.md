@@ -113,7 +113,7 @@ SensitiveCoreBean.localVar.set(localVarData);
 		// 您需要构建map对象
 		Map<String,Object> localVarData=new HashMap<>();
 		localVarData.put(ThreadLocalConstant.DATA, page.getResult());
-		SensitiveCoreBean.localVar.set(localVarData);
+		SensitiveLocalUtil.setLocalVar(localVarData);
 		// ResultHelper.makeSuccessResult 为自己项目所定制的统一封装返回体，
 		//page为分页数据，page实体里一般封装了json返前端数据( page.getResult()即是脱敏的数据 )
 		return ResultHelper.makeSuccessResult(page);
