@@ -3,6 +3,7 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
 <br/>
 ###### *脱敏效果如下：*
 <br/>
+
 ![image](https://user-images.githubusercontent.com/57822030/154007275-41a7e401-6265-427e-9e1f-a6c90c493974.png)
 
 
