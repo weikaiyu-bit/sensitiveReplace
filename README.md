@@ -66,7 +66,7 @@ public class SensitiveCoreBeanConfig
   
   ### 注解参数说明
   
-  ##### 1、@SensitiveReplace
+  ##### 1、@SensitiveReplace,你需要在数据的返回函数上标识该注解
 
 |  参数   | 类型  | 可选值  | 默认值 | 说明  |
 |  ----   | ---- |  ----   | ---- | ----   |
@@ -76,7 +76,7 @@ public class SensitiveCoreBeanConfig
 
 
 
-  ##### 2、@Replace
+  ##### 2、@Replace 你需要在实体类属性中需要脱敏的字段标识上该注解
 
 |  参数   | 类型  | 可选值  | 默认值 | 说明  |
 |  ----   | ---- |  ----   | ---- | ----   |
