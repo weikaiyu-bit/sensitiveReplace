@@ -58,3 +58,27 @@ public class SensitiveCoreBeanConfig
   ...
  ```
   即可完成替换
+  
+  <br />
+  
+  <br />
+  <br />
+  ### 参数说明
+  ##### 1、@SensitiveReplace
+
+|  参数   | 类型  | 可选值  | 默认值 | 说明  |
+|  ----   | ---- |  ----   | ---- | ----   |
+| dataType  | DataTypeEnum |LIST,COMMON,ENTITY  |COMMON| 返回的数据 可选集合，统一返回，实体 三种类型 |
+| key  | String | -- |result | dataType类型为COMMON时必填，默认值为 "result"，你需要告诉插件，你要替换的值字段key值叫什么，key值数据只能是实体类，或者List类型 |
+|keyDataType| DataTypeEnum|LIST,ENTITY|LIST|你将告诉插件你封装在key值的数据类型是List，还是实体类型|
+
+
+
+  ##### 2、@Replace
+
+|  参数   | 类型  | 可选值  | 默认值 | 说明  |
+|  ----   | ---- |  ----   | ---- | ----   |
+| rulePath  | Class | BankCardRuleImpl.class,IdentityCardRuleImpl.class,NameRuleImpl.class,VehiclePlateRuleImpl.class  |NameRuleImpl.class| 你需要提供该字段的替换规则 |
+| description  | String | -- |-- | 对注解的描述（可选） |
+
+
