@@ -85,11 +85,11 @@ public class SensitiveCoreBeanConfig
 
 
 
-  ##### 3、@ChildReplace 若你需要替换实体中的嵌套数据，则需要该注解
+  ##### 3、@ChildReplace 若你需要脱敏实体中的嵌套数据，也就是说，<br />您的实体类与其他实体是一对多，一对一的关系，你需要将多（一）的一方的数据也进行脱敏替换，则需要将该标识上改注解
 
 |  参数   | 类型  | 可选值  | 默认值 | 说明  |
 |  ----   | ---- |  ----   | ---- | ----   |
-|keyDataType| DataTypeEnum|LIST,ENTITY|LIST| 你需要提供替换字段值的类型 |
+|keyDataType| DataTypeEnum|LIST,ENTITY|LIST| 嵌套的数据的类型 |
 
 
 
