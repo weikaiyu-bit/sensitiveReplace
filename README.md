@@ -28,7 +28,7 @@ import com.wky.sensitive.aspect.SensitiveCoreBean;
 public class SensitiveCoreBeanConfig
 {
     @Bean
-    public SensitiveCoreBean sensitiveCoreBean()
+    public SensitiveCoreBean sensitiveCoreBean();
     {
 
         return new SensitiveCoreBean();
