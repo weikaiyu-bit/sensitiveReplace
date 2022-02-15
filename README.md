@@ -78,7 +78,7 @@ public class SensitiveCoreBeanConfig
 
 |  参数   | 类型  | 可选值  | 默认值 | 说明  |
 |  ----   | ---- |  ----   | ---- | ----   |
-| rulePath  | Class | BankCardRuleImpl.class,IdentityCardRuleImpl.class,NameRuleImpl.class,VehiclePlateRuleImpl.class  |NameRuleImpl.class| 你需要提供该字段的替换规则 |
+| rulePath  | Class | BankCardRuleImpl.class,IdentityCardRuleImpl.class,<br />NameRuleImpl.class,VehiclePlateRuleImpl.class  |NameRuleImpl.class| 你需要提供该字段的替换规则 |
 | description  | String | -- |-- | 对注解的描述（可选） |
 
 
