@@ -93,8 +93,9 @@ public class SensitiveCoreBeanConfig
 
 
 
-#### 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,使用方式：
+#### 我们强烈建议您使用 localVar，您只需要将数据放入ThreadLocal中，即可进行数据的替换,
 
+*使用方式：*
 ```java
 Map<String,Object> localVarData=new HashMap<>();
 localVarData.put(ThreadLocalConstant.DATA, "您要返回前端的集合或者单个实体数据");
