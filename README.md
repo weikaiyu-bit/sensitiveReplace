@@ -103,7 +103,7 @@ SensitiveLocalUtil.setLocalVar(companyInfoPage.getResult());
 
 *示例：*
 ```java
-	// 注:若您put到localVarData的数据为集合则dataType为 DataTypeEnum.LIST，若是实体则为DataTypeEnum.ENTITY
+	// 注:若您setLocalVar到localVarData的数据为集合则dataType为 DataTypeEnum.LIST，若是实体则为DataTypeEnum.ENTITY
 	@SensitiveReplace(dataType = DataTypeEnum.LIST)
 	@RequestMapping(value = "/query", method = RequestMethod.GET)
 	public Page<Test> query(Test company, String pageNo, String pageSize) {
