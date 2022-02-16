@@ -101,13 +101,13 @@ public class SensitiveCoreBeanConfig
 
 *使用方式：*
 ```java
+// 注:若您需要脱敏的数据为集合类型则dataType为 DataTypeEnum.LIST，若是实体则为DataTypeEnum.ENTITY
 SensitiveLocalUtil.setLocalVar("您需要脱敏的数据");
 
 ```
 
 *示例：*
 ```java
-	// 注:若您setLocalVar到localVarData的数据为集合则dataType为 DataTypeEnum.LIST，若是实体则为DataTypeEnum.ENTITY
 	@SensitiveReplace(dataType = DataTypeEnum.LIST)
 	@RequestMapping(value = "/query", method = RequestMethod.GET)
 	public Page<Test> query(Test company, String pageNo, String pageSize) {
