@@ -12,11 +12,17 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
   *注：必须选择1.0.2之后版本*
   ---
    ```java<!-- https://mvnrepository.com/artifact/io.github.weikaiyu-bit/sensitive-replace -->
-<dependency>
-    <groupId>io.github.weikaiyu-bit</groupId>
-    <artifactId>sensitive-replace</artifactId>
-    <version>1.0.2</version>
-</dependency>
+        <dependency>
+            <groupId>io.github.weikaiyu-bit</groupId>
+            <artifactId>sensitive-replace</artifactId>
+            <version>1.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 ```
   ---
 ### 步骤2：注入SensitiveCoreBean
