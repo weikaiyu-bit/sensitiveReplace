@@ -43,6 +43,23 @@ public class SensitiveCoreBeanConfig{
 }
 ```
 
+##### 3)、配置全局是否脱敏处理器
+```java
+/**
+ * 重写 bool 返回true时脱敏，返回false不脱敏
+ * @author weikaiyu
+ * @version 1.0
+ * @date 2022-04-11 17:38
+ */
+@Component
+public class SensitiveProcessor extends BeforeSensitiveProcessor {
+    @Override
+    public boolean bool() {
+        // TODO: 2022-04-11 暂时全部人都脱敏。这里会改成管理员不脱敏 
+        return true;
+    }
+}
+```
   ---
 
 ## 二、使用示例
