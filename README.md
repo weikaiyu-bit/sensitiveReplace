@@ -15,7 +15,7 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
         <dependency>
             <groupId>io.github.weikaiyu-bit</groupId>
             <artifactId>sensitive-replace</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.3</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
