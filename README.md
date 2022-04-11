@@ -35,12 +35,9 @@ sensitiveReplace是一个脱敏的工具插件，使用非常简单，开箱即�
 import com.wky.sensitive.aspect.SensitiveCoreBean;
 
 @Configuration
-public class SensitiveCoreBeanConfig
-{
+public class SensitiveCoreBeanConfig{
     @Bean
-    public SensitiveCoreBean sensitiveCoreBean();
-    {
-
+    public SensitiveCoreBean sensitiveCoreBean(){
         return new SensitiveCoreBean();
     }
 }
